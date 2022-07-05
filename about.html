@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <Title>About Us</Title>
+</head>
+<body style="background-image: url(backgroundimage7.jpg);">
+<form class="d-flex">
+    <input class="form-control me-2" id="userinput" type="search" placeholder="Find Out More About Us" aria-label="Search" style="font-weight: bold; height: 60px; width: 500px; border: none; justify-content: end; background: linear-gradient(#646319, #363f15); padding: 10px 25px; font-size: 0.9em;">
+    <ion-icon name="search-circle"></ion-icon>
+</form>
+<li style="text-align: end; height: 400px;">
+    <a href="index.html">Home</a><br>
+    <a href="Newpage.html">Blog</a><br>
+    <a href="login.html">Login</a><br>
+    <a href="New account.html">Create New Account</a><br>
+    <a href="About.html">About Us</a><br>
+    <h1>About Us</h1>
+    <h2>We're here for your wellbeing</h2><br>  
+    <h2 style="font-weight: lighter;">Omo i don't even know what to write here</h2>
+    <h2 style="font-weight: lighter;">What are you??</h2>
+    <h2 style="font-weight: lighter;">A comrade and More!!</h2>
+    <h2 style="font-weight: lighter;">that's what you are</h2>
+</li>
+
+
+<div class="form-floating mb-3">
+<div style="text-align: center;">
+    <a href="Contact.html">Contact Us</a>  
+    <a href="Waterdrop.html">Trade Mark</a><br>          
+</div>
+    <button class="btn btn-primary btn-md" id="enter">Find Out More</button>            
+</div>
+
+<script type="text/javascript">
+
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style>
+    .d-flex{
+        content: '';
+        position: relative;
+        height: 300px;
+        display: flex;
+        float: none;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+
+    input::placeholder{
+        color: black;
+    }
+    ion-icon{
+        position: absolute;
+        right: 33%;
+        top: 1%;
+        font-size: 2em;
+    }
+    a{
+        color: rgb(160, 147, 72);
+    }
+    .btn{
+    background-color: rgb(34, 31, 16);
+    color: rgb(128, 125, 113);
+    border-radius: .011em;
+    padding: 1em 3em;
+    font-weight: bold;
+    user-select: none;
+    }
+
+    .coolTitle{
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 40px;
+    transform: skewY(-10deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: tomato;
+    text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -1px 0 firebrick,
+    -3px -1px 0 firebrick,
+    -4px -1px 0 firebrick,
+    -5px -1px 0 firebrick,
+    -6px -1px 0 firebrick,
+    -7px -1px 0 firebrick,
+    -8px -1px 0 firebrick,
+    -30px -20px 40px dimgrey;
+}
+
+.done{
+    text-decoration: line-through;
+}
+</style>
+
+<script type="text/javascript">
+    const input = document.getElementById("userinput");
+    const button = document.getElementsByTagName("button")[0]
+
+    input.addEventListener("keypress", function(){
+        console.log("!!")
+    })
+
+    button.addEventListener("click", function(){
+        alert("Nothing Here!!!")
+})
+
+
+</script>
+
+</body>
+</html>
