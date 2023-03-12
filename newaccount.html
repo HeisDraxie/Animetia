@@ -13,20 +13,30 @@
 <form method="GET">
 <div class="form-floating mb-3" style="height: 200px;">
     <input type="text" class="form-control" id="floatingInput" placeholder="Firstname" style="height: 40px; width: 300px; border: none; justify-content: end; font-size: 3px;background: linear-gradient(#8085ec, #727781); padding: 10px 25px; font-size: 0.9em; border-radius: 3px 3px 3px 3px;" required><br>
-    <input type="text" class="form-control" id="floatingInput" placeholder="Middlename" style="height: 40px; width: 300px; border: none; justify-content: end; font-size: 3px;background: linear-gradient(#8085ec, #727781); padding: 10px 25px; font-size: 0.9em;" required><br>
+    <input type="text" class="form-control" id="floatingInput" placeholder="Middlename" style="height: 40px; width: 300px; border: none; justify-content: end; font-size: 3px;background: linear-gradient(#8085ec, #727781); padding: 10px 25px; font-size: 0.9em;"><br>
     <input type="text" class="form-control" id="floatingInput" placeholder="Lastname" style="height: 40px; width: 300px; border: none; justify-content: end; font-size: 3px;background: linear-gradient(#8085ec, #727781); padding: 10px 25px; font-size: 0.9em;" required><br>
     <input type="text" class="form-control" id="floatingInput" placeholder="Username" minlength="4" style="height: 40px; width: 300px; border: none; justify-content: end; font-size: 3px;background: linear-gradient(#8085ec, #727781); padding: 10px 25px; font-size: 0.9em;" maxlength="20" required><br>
     <input type="email" class="form-control" id="floatingInput" placeholder="Email" style="height: 40px; width: 300px; border: none; justify-content: end; font-size: 3px;background: linear-gradient(#8085ec, #727781); padding: 10px 25px; font-size: 0.9em; border-radius: 3px;" required><br>
     <input type="text" class="form-control" id="floatingInput" placeholder="Password" minlength="8" maxlength="20" style="height: 40px; width: 300px; border: none; justify-content: end; font-size: 3px;background: linear-gradient(#8085ec, #727781); padding: 10px 25px; font-size: 0.9em;" minlength="8" maxlength="20" required><br>
     <input type="date" name="Birthday" style="height: 40px; width: 300px; border: none; justify-content: end; font-size: 3px; font-weight: bold; background: linear-gradient(#8085ec, #727781); padding: 10px 25px; font-size: 0.9em;" required><br>
-    Sex:<input type="radio" name="gender" value="male"required>Male<br>
-    <input type="radio" name="gender" value="female" required>Female<br>
-    <input type="radio" name="gender" value="Other" required>Other<br>
-    Pet:<input type="checkbox" name="dog" value="dog">Dog<br>
-    <input type="checkbox" name="cat" value="cat">Cat<br>
-    <input type="checkbox" name="others" value="others">Others<br>
-    <input type="submit" value="Register" style="background: linear-gradient(#8085ec, #727781);">
-    <input type="reset" style="background: linear-gradient(#8085ec, #727781);"><br>
+<div class="form-floating">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" style="height: 40px; width: 300px; border: none; justify-content: end; font-size: 3px;background: linear-gradient(#8085ec, #727781); padding: 10px 25px; font-size: 0.9em;">
+        <option selected>Gender</option>
+        <option name="gender" value="Male" required>Male</option><br>
+        <option name="gender" value="Female" required>Female</option><br>
+        <option name="gender" value="others" required>Others</option>
+    </select>
+</div>
+<div class="form-floating">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" style="height: 40px; width: 300px; border: none; justify-content: end; font-size: 3px;background: linear-gradient(#8085ec, #727781); padding: 10px 25px; font-size: 0.9em;">
+        <option selected>Pet</option>
+        <option name="Cat" value="Cat" required>Cat</option><br>
+        <option name="Dog" value="Dog" required>Dog</option><br>
+        <option name="Others" value="Others" required>Others</option>
+    </select>
+</div>
+    <input type="submit" value="Register" style="font-weight: bold; height: 25px; background: linear-gradient(#8085ec, #727781);">
+    <input type="reset" style="font-weight: bold; height: 25px; background: linear-gradient(#8085ec, #727781);"><br>
     <a href="login.html">Back</a><br>
     </div>
 </form>
